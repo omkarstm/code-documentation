@@ -1,0 +1,31 @@
+.starbelly-logo {
+    display: flex;
+    align-items: center;
+  overflow: hidden;
+  
+    &__text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #23213d;
+      font-family: inherit;
+      letter-spacing: 0.5px;
+      display: inline-block;
+    }
+  
+    &__y {
+      position: relative;
+      display: inline-block;
+    }
+  
+    &__dot {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 8px;
+      height: 8px;
+      background: #155dfc;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  }
+  

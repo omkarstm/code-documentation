@@ -1,0 +1,26 @@
+.button-link {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    font-weight: 600;
+    color: #23213d;
+    background: #F2F3F5;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+  
+    &--primary {
+      background: #F2F3F5;
+    }
+  
+    &--secondary {
+      background: #ffd600;
+      border-radius: 0;
+
+    }
+  
+    &:hover {
+      opacity: 0.85;
+      color: #23213d;
+    }
+  }
+  
