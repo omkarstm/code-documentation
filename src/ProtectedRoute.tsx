@@ -18,7 +18,6 @@ const ProtectedRoute: React.FC = () => {
     }
 
     return <>
-        <Header />
         <Outlet />
     </>
 };

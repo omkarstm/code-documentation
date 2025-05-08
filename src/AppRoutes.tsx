@@ -7,6 +7,9 @@ import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
 import ProtectedRoute from "./ProtectedRoute";
 import AuthRoute from "./AuthRoute";
+import DashboardIndex from "./components/section/Dashboard";
+import NewProject from "./components/section/Dashboard/NewProject";
+import AllDoc from "./pages/AllDoc";
 
 function AppRoutes() {
   return (
@@ -21,7 +24,11 @@ function AppRoutes() {
 
       {/* Protected routes: Only accessible if logged in */}
       <Route element={<ProtectedRoute />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboard" element={<Dashboard />}>
+      <Route index element={<DashboardIndex />} />
+      <Route path="new" element={<NewProject />} />
+      <Route path="all" element={<AllDoc />} />
+      </Route>
       </Route>
     </Routes>
   );
