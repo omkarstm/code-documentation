@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/section/Header";
 import Hero from "../components/section/Hero";
+import Header from "../components/section/Header";
 
 
 const Home: React.FC = () => (
